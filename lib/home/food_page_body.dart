@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/icon_and_text_widget.dart';
 import '../utils/Colors.dart';
 import '../widgets/big_text.dart';
 import '../widgets/small_text.dart';
@@ -76,7 +77,12 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                 ),
                 SizedBox(height: 10),
                 Row(
-                  children: [],
+                  children: [
+                    IconAndTextWidget(
+                        icon: Icons.circle_sharp,
+                        text: 'Normal',
+                        iconColor: AppColors.iconColor1),
+                  ],
                 ),
               ],
             ),

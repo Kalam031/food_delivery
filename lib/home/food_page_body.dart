@@ -93,6 +93,40 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             ],
           ),
         ),
+        //List of food and image
+        Container(
+          height: 700,
+          child: ListView.builder(
+            physics: NeverScrollableScrollPhysics(),
+            shrinkWrap: true,
+            itemCount: 15,
+            itemBuilder: (context, index) {
+              return Container(
+                margin: EdgeInsets.only(
+                  left: Dimensions.width15,
+                  right: Dimensions.width15,
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 100,
+                      width: 100,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(
+                          Dimensions.radius20,
+                        ),
+                        color: Colors.white38,
+                        image: DecorationImage(
+                          image: AssetImage("assets/image/food0.png"),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
+        ),
       ],
     );
   }

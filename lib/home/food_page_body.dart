@@ -64,15 +64,16 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           ),
         ),
         //Popular text
-        SizedBox(height: Dimensions.height30),
+        SizedBox(height: Dimensions.height20),
         Container(
-          margin: EdgeInsets.only(left: Dimensions.width30),
+          margin: EdgeInsets.only(
+              left: Dimensions.width30, bottom: Dimensions.height10),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               BigText(text: "Popular"),
               SizedBox(
-                width: Dimensions.height10,
+                width: Dimensions.width10,
               ),
               Container(
                 margin: EdgeInsets.only(bottom: 3),
@@ -82,7 +83,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                 ),
               ),
               SizedBox(
-                width: Dimensions.height10,
+                width: Dimensions.width10,
               ),
               Container(
                 margin: EdgeInsets.only(bottom: 2),
@@ -95,29 +96,45 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         ),
         //List of food and image
         Container(
-          height: 700,
+          height: 900,
           child: ListView.builder(
             physics: NeverScrollableScrollPhysics(),
-            shrinkWrap: true,
-            itemCount: 15,
+            //shrinkWrap: true,
+            itemCount: 10,
             itemBuilder: (context, index) {
               return Container(
                 margin: EdgeInsets.only(
-                  left: Dimensions.width15,
-                  right: Dimensions.width15,
+                  left: Dimensions.width20,
+                  right: Dimensions.width20,
+                  bottom: Dimensions.height10,
                 ),
                 child: Row(
                   children: [
+                    //image section
                     Container(
-                      height: 100,
-                      width: 100,
+                      height: 120,
+                      width: 120,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(
                           Dimensions.radius20,
                         ),
                         color: Colors.white38,
                         image: DecorationImage(
+                          fit: BoxFit.cover,
                           image: AssetImage("assets/image/food0.png"),
+                        ),
+                      ),
+                    ),
+                    //txt section
+                    Expanded(
+                      child: Container(
+                        height: 100,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(Dimensions.radius20),
+                            bottomRight: Radius.circular(Dimensions.radius20),
+                          ),
+                          color: Colors.white,
                         ),
                       ),
                     ),

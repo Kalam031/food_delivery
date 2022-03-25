@@ -37,6 +37,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
   @override
   Widget build(BuildContext context) {
+    print(MediaQuery.of(context).size.height);
+    print(MediaQuery.of(context).size.width);
     return Column(
       children: [
         //Slider Section

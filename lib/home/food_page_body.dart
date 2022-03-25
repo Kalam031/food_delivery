@@ -66,8 +66,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         //Popular text
         SizedBox(height: Dimensions.height20),
         Container(
-          margin: EdgeInsets.only(
-              left: Dimensions.width30, bottom: Dimensions.height20),
+          margin: EdgeInsets.only(left: Dimensions.width30),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
@@ -261,7 +260,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     BigText(text: 'Chinese Side'),
-                    SizedBox(height: Dimensions.height5),
+                    SizedBox(height: Dimensions.height10),
                     Row(
                       children: [
                         Wrap(

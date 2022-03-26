@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/utils/dimensions.dart';
 import '../home/food_page_body.dart';
-import '../widgets/small_text.dart';
-import '../widgets/big_text.dart';
-import '../utils/Colors.dart';
+import '../../widgets/small_text.dart';
+import '../../widgets/big_text.dart';
+import '../../utils/Colors.dart';
 
 class MainFoodPage extends StatefulWidget {
   @override

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:dots_indicator/dots_indicator.dart';
-import '../utils/dimensions.dart';
-import '../widgets/icon_and_text_widget.dart';
-import '../utils/Colors.dart';
-import '../widgets/big_text.dart';
-import '../widgets/small_text.dart';
+import '../../utils/dimensions.dart';
+import '../../widgets/icon_and_text_widget.dart';
+import '../../utils/Colors.dart';
+import '../../widgets/big_text.dart';
+import '../../widgets/small_text.dart';
 
 class FoodPageBody extends StatefulWidget {
   const FoodPageBody({Key? key}) : super(key: key);
